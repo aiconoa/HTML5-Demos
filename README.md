@@ -1,7 +1,7 @@
 HTML5-Demos
 ===========
 
-Some demos from our HTML5 trainings at AICONOA
+Some demos from our HTML5 trainings at AICONOA.
 
 Contains demos of:
 * the `<video>` element
