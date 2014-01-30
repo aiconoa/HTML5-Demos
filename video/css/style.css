@@ -1,0 +1,105 @@
+/**
+ The MIT License (MIT)
+
+ Copyright (c) 2014 AICONOA
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+ */
+
+/** general layout **/
+
+#demo {
+    padding-top:50px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top:0px;
+    margin-bottom:20px;
+}
+
+/** video player **/
+#videoplayer {
+    margin:0 auto;
+    box-shadow: 1px 1px 12px #555;
+    position:relative;
+}
+
+#videoplayer {
+    line-height: 0px;
+    background-color: black;
+}
+
+#videoplayer, #videoplayer video, #controls  {
+    width:300px;
+}
+
+@media (min-width: 480px ) {
+    #videoplayer, #videoplayer video, #controls  {
+        width:450px;
+    }
+}
+
+#videoplayer:hover #controls {
+    opacity: 1;
+}
+
+#controls {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    opacity:0;
+    line-height: 18px;
+    /*background-color: rgba(0,0,0,0);*/
+    background-color: rgb(230,98,35);
+    -webkit-transition: 1s opacity ease-in;
+}
+
+.vpi {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #EEEEEE;
+    padding: 2px 4px;
+    background:none;
+    border:none;
+}
+
+.vpi i  {
+    -webkit-filter: drop-shadow(1px 1px 7px rgba(50,50,50,0.8));
+    /*box-shadow: 1px 1px 12px #555;*/
+}
+.vpi#time {
+    float:right;
+}
+
+#controls > div {
+    margin-left:60px;
+}
+
+#html5logo {
+    width:50px;
+    position:absolute;
+    bottom:5px;
+    left:5px;
+    -webkit-filter: drop-shadow(1px 1px 5px rgba(30,30,30,0.8));
+}
+
+#bfs {
+    float:right;
+}
