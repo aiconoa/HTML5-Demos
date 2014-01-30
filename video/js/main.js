@@ -31,13 +31,12 @@ var video = document.getElementsByTagName("video")[0];
 
 var fullScreenButton = document.getElementById("fsb");
 fullScreenButton.addEventListener('click', function(event){
-    var videoScreen = document.getElementById("videoScreen");
-    if (videoScreen.requestFullscreen) {
-        videoScreen.requestFullscreen();
-    } else if (videoScreen.mozRequestFullScreen) {
-        videoScreen.mozRequestFullScreen();
-    } else if (videoScreen.webkitRequestFullscreen) {
-        videoScreen.webkitRequestFullscreen();
+    if (video.requestFullscreen) {
+        video.requestFullscreen();
+    } else if (video.mozRequestFullScreen) {
+        video.mozRequestFullScreen();
+    } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
     }
 });
 
