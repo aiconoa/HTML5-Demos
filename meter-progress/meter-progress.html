@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>AICONOA | HTML5 Demo - meter and progress elements</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Sample demo of the HTML5 meter and progress elements.">
+        <meta name="author" content="AICONOA"/>
+        <link rel="license" href="http://opensource.org/licenses/mit-license.php">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section id="meter-demo" class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h2>The <span class="label label-primary">&lt;meter&gt;</span> element.</h2>
+                    <dl>
+                        <dt>Empty:</dt><dd><meter id="meter-empty" value="0" min="0" max="100" low="20" high="80">0</meter></dd>
+                        <dt>Some:</dt><dd><meter id="meter-some" value="30" min="0" max="100" low="20" high="80">30</meter></dd>
+                        <dt>Full:</dt><dd><meter id="meter-full" value="100" min="0" max="100" low="20" high="80">100</meter></dd>
+                        <dt>Less than low:</dt><dd><meter id="meter-less-than-low" value="18" min="0" max="100" low="20" high="80">18</meter></dd>
+                        <dt>More than high:</dt><dd><meter id="meter-more-than-high" value="90" min="0" max="100" low="20" high="80">90</meter></dd>
+                        <dt>In the range:</dt><dd><meter id="meter-in-range" value="50" min="0" max="100" low="20" high="80">50</meter></dd>
+                        <dt>Optimum:</dt><dd><meter id="meter-optimum" value="65" min="0" max="100" low="20" high="80" optimum="65">65</meter></dd>
+                        <dt>Donations:</dt><dd><meter id="meter-donations" value="50" min="0" max="100" low="20" high="80" title="euros">50€</meter></dd>
+                    </dl>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h2>The <span class="label label-primary">&lt;progress&gt;</span> element.</h2>
+                    <dl>
+                        <dt>Empty:</dt><dd><progress id="progress-empty" value="0" max="100">0</progress></dd>
+                        <dt>Some:</dt><dd><progress id="progress-some" value="30" max="100">30</progress></dd>
+                        <dt>Full:</dt><dd><progress id="progress-full" value="100" max="100">100</progress></dd>
+                        <dt>Indeterminate:</dt><dd><progress id="progress-indeterminate" max="100">indeterminate</progress></dd>
+                        <dt>JavaScript:</dt><dd><progress id="progress-javascript" value="0" max="100">%</progress></dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <section id="notes" class="container">
+            <div class="panel panel-warning">
+                <div class="panel-heading">Notes</div>
+                <div class="panel-body">
+                    <p>The meter and progress elements are hard to style and as for now it's not really cross-browser compliant.<br>
+                        Some examples of styling the meter element <a href="https://gist.github.com/chemicaloliver/2732448">here</a> ahd
+                        <a href="http://www.hongkiat.com/blog/html5-progress-bar/">here</a><br>
+                        Some examples of styling the progress element <a href="http://css-tricks.com/html5-progress-element/">here</a>.</p>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">More</div>
+                <div class="panel-body">
+                    <p>The meter element on the
+                        <a href="http://www.w3.org/TR/html5/forms.html#the-meter-element">W3C</a> site, on the
+                        <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-button-element.html#the-meter-element">WHATWG</a> site</p>
+                    <p>The progress element on the <a href="http://www.w3.org/TR/html5/forms.html#the-progress-element">W3C</a> site, on the
+                        <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-button-element.html#the-progress-element">WHATWG</a> site</p>
+                </div>
+            </div>
+        </section>
+        <footer class="container">
+            <p>This demo is provided by <a href="http://www.aiconoa.com">AICONOA</a>. The whole code (html, css, javascript) is <a rel="license" href="http://opensource.org/licenses/mit-license.php">MIT Licensed</a>. &copy; 2014 <a href="http://www.aiconoa.com">AICONOA</a></p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
