@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>AICONOA | HTML5 Demo - canvas element</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Sample demo of the HTML5 canvas element">
+        <meta name="author" content="AICONOA"/>
+        <link rel="license" href="http://opensource.org/licenses/mit-license.php">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="container">
+            <h2>The <span class="label label-primary">&lt;drag and drop&gt;</span> API.</h2>
+            <p>Pick a blue or red item and drop it onto the first box.</p>
+        </header>
+        <section id="demos" class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="item-1" class="blue-box" draggable="true"></div>
+                    <div id="item-2" class="red-box" draggable="true"></div>
+                    <div id="dnd-ok-zone" class="dnd-zone"></div>
+                    <div id="dnd-not-ok-zone" class="dnd-zone"></div>
+                </div>
+            </div>
+        </section>
+        <section id="notes" class="container">
+            <div class="panel panel-warning">
+                <div class="panel-heading">Notes</div>
+                <div class="panel-body">
+                    <p>Files can also be drag and dropped, we'll create another demo for that later.</p>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">More</div>
+                <div class="panel-body">
+                    <dl>
+                        <dt>References</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="http://www.w3.org/TR/html5/editing.html#dnd">W3C</a> site.</li>
+                                <li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/dnd.html">WHATWG</a> site.</li>
+                                <li><a href="https://developer.mozilla.org/en-US/docs/DragDrop/Drag_Operations">Drag operations</a> at Mozilla Developer Network.</li>
+                            </ul>
+                        </dd>
+                        <dt>Demos</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="http://html5demos.com/drag">HTML5demos</a>' demo.</li>
+                            </ul>
+                        </dd>
+                        <dt>Tutorials</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="http://www.html5rocks.com/en/tutorials/dnd/basics">Drag and Drop basics</a> at HTML5 rocks.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <footer class="container">
+            <p>HTML5 Logo by <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a>.</p>
+            <p>This demo is provided by <a href="http://www.aiconoa.com">AICONOA</a>. The whole code (html, css, javascript) is <a rel="license" href="http://opensource.org/licenses/mit-license.php">MIT Licensed</a>. &copy; 2014 <a href="http://www.aiconoa.com">AICONOA</a></p>
+        </footer>
+        <script src="js/dnd-1.js"></script>
+    </body>
+</html>
