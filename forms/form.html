@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>AICONOA | HTML5 Demo - form new elements</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Sample demo of the HTML5 form new elements">
+        <meta name="author" content="AICONOA"/>
+        <link rel="license" href="http://opensource.org/licenses/mit-license.php">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="container">
+            <h1>The HTML5 form new elements.</h1>
+        </header>
+        <section id="demos" class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                   <h1>Form</h1>
+                    <form role="form" class="form-horizontal" method="post" action="form.html">
+                        <div class="form-group">
+                            <label for="first-name" class="col-sm-2 control-label">First Name</label>
+                            <div class="col-sm-10">
+                                <input id="first-name"
+                                       class="form-control"
+                                       type="text"
+                                       autofocus
+                                       required />
+                             </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name" class="col-sm-2 control-label">Last Name</label>
+                            <div class="col-sm-10">
+                                <input id="last-name"
+                                       class="form-control"
+                                       type="text"
+                                       />
+                             </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="dateofbirth" class="col-sm-2 control-label">Date of birth</label>
+                            <div class="col-sm-10">
+                                <input id="dateofbirth"
+                                       class="form-control"
+                                       type="date"
+                                       />
+                             </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email1" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input id="email1"
+                                       class="form-control"
+                                       type="email"
+                                       placeholder="xyz@example.com"
+                                       />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email2" class="col-sm-2 control-label">Confirm email</label>
+                            <div class="col-sm-10">
+                                <input id="email2"
+                                       class="form-control"
+                                       type="email"
+                                       placeholder="same email as before"
+                                       />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="description" class="col-sm-2 control-label">Description</label>
+                            <div class="col-sm-10">
+                                <textarea id="description"
+                                          class="form-control"
+                                          maxlength="1000"
+                                          placeholder="1000 characters max"
+                                          spellcheck></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="col-sm-2 control-label">Phone number</label>
+                            <div class="col-sm-10">
+                            <!-- http://html5pattern.com/Phones -->
+                                <input id="phone"
+                                       class="form-control"
+                                       type="tel"
+                                       pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"
+                                       title="French phone number, ex: +33 6 00 00 00 00"
+                                       placeholder="+33 6 00 00 00 00"
+                                       />
+                             </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="website" class="col-sm-2 control-label">Web site</label>
+                            <div class="col-sm-10">
+                                <input id="website"
+                                       class="form-control"
+                                       type="url"
+                                       placeholder="http://www.example.com"
+                                       />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="favlang" class="col-sm-2 control-label">Favorite language</label>
+                                <div class="col-sm-10">
+                                <input id="favlang"
+                                       class="form-control"
+                                       type="text"
+                                       list="favlanglist"/>
+                                <datalist id="favlanglist">
+                                    <option value="C">
+                                    <option value="C++">
+                                    <option value="CSS">
+                                    <option value="C#">
+                                    <option value="HTML">
+                                    <option value="Go">
+                                    <option value="Java">
+                                    <option value="JavaScript">
+                                    <option value="Objective-C">
+                                    <option value="PHP">
+                                    <option value="Python">
+                                    <option value="Ruby">
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="xp" class="col-sm-2 control-label">Years of experience</label>
+                            <div class="col-sm-10">
+                                <input type="number"
+                                       class="form-control"
+                                       id="xp"
+                                       min="0"
+                                       max="100"
+                                       step="1" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="favcol" class="col-sm-2 control-label">Favorite color</label>
+                            <div class="col-sm-10">
+                                <input id="favcol"
+                                       class="form-control"
+                                       type="color"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <input id="submit"
+                                       type="submit"/>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="notes" class="container">
+            <div class="panel panel-warning">
+                <div class="panel-heading">Notes</div>
+                <div class="panel-body">
+                    <p>Remember to validate the submitted data on the server side.</p>
+                    <p>In order to process the form server side, don't forget to add <a href="http://stackoverflow.com/a/7470289/254439"><code>name</code></a> attributes to your form elements.</p>
+                    <p>There are more HTML5 form elements and attributes than demoed here. <code>search, range, datetime, time,...</code></p>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">More</div>
+                <div class="panel-body">
+                    <dl>
+                        <dt>References</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="http://www.w3.org/TR/html5/forms.html">W3C</a> site.</li>
+                                <li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/forms.html">WHATWG</a> site.</li>
+                                <li><a href="http://www.wufoo.com">Current browser support status</a> by wufoo.com.</li>
+                            </ul>
+                        </dd>
+                        <dt>Tools</dt>
+                        <dd>
+                            <ul>
+                                <li>Some url patterns at <a href="http://html5pattern.com">HTML5Pattern.com</a></li>
+                            </ul>
+                        </dd>
+                        <dt>Tutorials</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="http://www.html5rocks.com/en/tutorials/forms/html5forms/">Making Forms Fabulous with HTML5</a> at HTMl5 Rocks</li>
+                                <li><a href="http://www.html5rocks.com/en/tutorials/forms/constraintvalidation/">Constraint Validation: Native Client Side Validation for Web Forms</a> at HTML5 Rocks. This tutorial illustrates some current problems of the validation API.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <footer class="container">
+            <p>HTML5 Logo by <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a>.</p>
+            <p>This demo is provided by <a href="http://www.aiconoa.com">AICONOA</a>. The whole code (html, css, javascript) is <a rel="license" href="http://opensource.org/licenses/mit-license.php">MIT Licensed</a>. &copy; 2014 <a href="http://www.aiconoa.com">AICONOA</a></p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
