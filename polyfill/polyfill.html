@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <title>AICONOA | HTML5 Demo - Polyfills</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Sample demo of the polyfill technique">
+        <meta name="author" content="AICONOA"/>
+        <link rel="license" href="http://opensource.org/licenses/mit-license.php">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/openlayers/2.12/OpenLayers.js"></script>
+    </head>
+    <body>
+        <header class="container">
+            <h1>Using Modernizr</h1>
+        </header>
+        <section id="demos" class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                   <h1>Testing for geolocation</h1>
+
+                </div>
+                <div id="geolocation" class="col-sm-12 col-md-12">
+                    <p>Loading position...</p>
+                </div>
+            </div>
+        </section>
+        <section id="notes" class="container">
+            <div class="panel panel-warning">
+                <div class="panel-heading">Notes</div>
+                <div class="panel-body">
+                    <p>Consider having a look at <a href="http://html5please.com">HTML5 Please</a> in order to know what HTML5 feature you can use on which browser. You will also get the right polyfill to use for each feature you want to use.</p>
+                    <ul>
+                        <li>A shim lets you write the same code across all browsers by implementing a new API in downlevel browsers.</li>
+                        <li>A polyfill is a shim or collection of shims (and a catchy name).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">More</div>
+                <div class="panel-body">
+                    <dl>
+                        <dt>References</dt>
+                        <dd>
+                            <ul>
+                                <li>Modernizr's polyfills list <a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">here</a> or
+                                    <a href="http://html5polyfill.com">here</a></li>
+                            </ul>
+                        </dd>
+                        <dt>Tools</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="http://modernizr.com">Modernizr</a> is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.</li>
+                            </ul>
+                        </dd>
+                        <dt>Tutorials</dt>
+                        <dd>
+                            <ul>
+                                <li>A tutorial at HTML5 Rocks for <a href="http://www.html5rocks.com/en/tutorials/forms/constraintvalidation/">polyfilling the HTML5 constraint validation API</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <footer class="container">
+            <p>HTML5 Logo by <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a>.</p>
+            <p><a href="https://github.com/alexei/sprintf.js">sprintf.js</a> Copyright (c) 2007-2013, Alexandru Marasteanu &lt;hello [at) alexei (dot] ro&gt;
+                All rights reserved.</p>
+            <p>This demo is provided by <a href="http://www.aiconoa.com">AICONOA</a>. The whole code (html, css, javascript) is <a rel="license" href="http://opensource.org/licenses/mit-license.php">MIT Licensed</a>. &copy; 2014 <a href="http://www.aiconoa.com">AICONOA</a></p>
+        </footer>
+        <script src="vendor/js/sprintf.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

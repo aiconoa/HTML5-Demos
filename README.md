@@ -7,6 +7,7 @@ Contains the following demos:
 * `<canvas>` element
 * drag and drop API
 * forms new elements
+* Using [Modernizr](http://modernizr.com "Modernizr")
 * page structure demo & sectioning content
 * `<meter>` element
 * `<progress>` element

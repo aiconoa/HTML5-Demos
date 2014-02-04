@@ -10,7 +10,7 @@ Array.prototype.forEach.call(items,function(item) {
 });
 
 function handleDragStart(e) {
-    this.style.opacity = '0.3';  // this / e.target is the source node.
+    this.style.opacity = '0.3';
     e.dataTransfer.effectAllowed = 'all';
     e.dataTransfer.setData('application/vnd.aiconoa.dnd-demo', this.id);
 }
