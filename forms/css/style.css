@@ -25,6 +25,7 @@
 body {
     padding-top:50px;
 }
+
 #demo {
     margin-bottom: 30px;
 }
@@ -32,74 +33,4 @@ body {
 h1 {
     margin-top:0px;
     margin-bottom:30px;
-}
-
-/** video player **/
-#videoplayer {
-    margin:0 auto;
-    box-shadow: 1px 1px 12px #555;
-    position:relative;
-}
-
-#videoplayer {
-    line-height: 0px;
-    background-color: black;
-}
-
-#videoplayer, #videoplayer video, #controls  {
-    width:300px;
-}
-
-@media (min-width: 480px ) {
-    #videoplayer, #videoplayer video, #controls  {
-        width:450px;
-    }
-}
-
-#videoplayer:hover #controls {
-    opacity: 1;
-}
-
-#controls {
-    position:absolute;
-    bottom:0px;
-    left:0px;
-    opacity:0;
-    line-height: 18px;
-    /*background-color: rgba(0,0,0,0);*/
-    background-color: rgb(230,98,35);
-    -webkit-transition: 1s opacity ease-in;
-}
-
-.vpi {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #EEEEEE;
-    padding: 2px 4px;
-    background:none;
-    border:none;
-}
-
-.vpi i  {
-    -webkit-filter: drop-shadow(1px 1px 7px rgba(50,50,50,0.8));
-    /*box-shadow: 1px 1px 12px #555;*/
-}
-.vpi#time {
-    float:right;
-}
-
-#controls > div {
-    margin-left:60px;
-}
-
-#html5logo {
-    width:50px;
-    position:absolute;
-    bottom:5px;
-    left:5px;
-    -webkit-filter: drop-shadow(1px 1px 5px rgba(30,30,30,0.8));
-}
-
-#bfs {
-    float:right;
 }
