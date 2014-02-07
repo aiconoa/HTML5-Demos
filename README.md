@@ -12,4 +12,5 @@ Contains the following demos:
 * page structure demo & sectioning content
 * `<meter>` element
 * `<progress>` element
+* `<ruby>`, `<rp>` and `<rt>` elements
 * `<video>` element
